@@ -10,7 +10,7 @@
 
 .hero-container {
     height: 572px;
-    padding-left: 25px;
+    padding-left: 15px;
     display: flex;
     flex-direction: column;
     min-width: 290px;
@@ -23,13 +23,6 @@
     background-size: cover;
     color: whitesmoke;
 
-    @include bp-medium {
-        padding-left: 75px;
-    }
-    @include bp-large {
-        padding-left: 75px;
-    }
-
     &__title {
         font-size: $fontSize40;
         margin-bottom: 15px;
@@ -39,13 +32,6 @@
     &__text {
         max-width: 230px;
         margin-bottom: 30px;
-
-        @include bp-medium {
-            font-size: $fontSize16;
-        }
-        @include bp-large {
-            font-size: $fontSize18;
-        }
     }
 
     &__cta {
@@ -58,10 +44,6 @@
             border-radius: 12px;
             color: whitesmoke;
             cursor: pointer;
-
-            @include bp-medium {
-                font-size: $fontSize16;
-            }
         }
     }
 }
