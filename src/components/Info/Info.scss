@@ -1,0 +1,59 @@
+@import '../../styles/utils/variables.scss';
+@import '../../styles/utils/mixins.scss';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $font-family-spectral, sans-serif;
+    color: whitesmoke;
+}
+
+.info-container {
+    height: 628px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: $pantone-blue;
+
+    &__section {
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include bp-medium {
+            max-width: 500px;
+        }
+        @include bp-large {
+            max-width: 500px;
+        }
+
+        &-heading {
+            margin-bottom: 10px;
+            font-weight: 400;
+            font-size: $fontSize20;
+            color: $pantone-gold;
+            @include bp-medium {
+                margin-bottom: 25px;
+            }
+            @include bp-large {
+                margin-bottom: 25px;
+            }
+        }
+
+        &-paragraph {
+            margin-bottom: 20px;
+            text-align: justify;
+            font-size: $fontSize14;
+            @include bp-medium {
+                font-size: $fontSize16;
+            }
+            @include bp-large {
+                font-size: $fontSize16;
+            }
+        }
+    }
+}

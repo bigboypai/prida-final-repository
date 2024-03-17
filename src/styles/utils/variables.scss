@@ -1,0 +1,63 @@
+// Colors
+
+$pantone-blue: #0C2340;
+$pantone-gold: #AA8A00;
+
+//Font sizes
+
+$fontSize12: 12px;
+$fontSize14: 14px;
+$fontSize16: 16px;
+$fontSize18: 18px;
+$fontSize20: 20px;
+$fontSize24: 24px;
+$fontSize32: 32px;
+$fontSize40: 40px;
+
+// fonts
+
+// Variables para fuentes Spectral y pesos de fuente
+$font-family-spectral: "Spectral", serif;
+$font-weight-extralight: 200;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+
+// Estilos para las clases de fuente Spectral
+.spectral-extralight {
+  font-family: $font-family-spectral;
+  font-weight: $font-weight-extralight;
+}
+
+.spectral-light {
+  font-family: $font-family-spectral;
+  font-weight: $font-weight-light;
+}
+
+.spectral-regular {
+  font-family: $font-family-spectral;
+  font-weight: $font-weight-regular;
+}
+
+.spectral-medium {
+  font-family: $font-family-spectral;
+  font-weight: $font-weight-medium;
+}
+
+.spectral-semibold {
+  font-family: $font-family-spectral;
+  font-weight: $font-weight-semibold;
+}
+
+.spectral-bold {
+  font-family: $font-family-spectral;
+  font-weight: $font-weight-bold;
+}
+
+.spectral-extrabold {
+  font-family: $font-family-spectral;
+  font-weight: $font-weight-extrabold;
+}

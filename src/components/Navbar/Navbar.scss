@@ -1,0 +1,101 @@
+@import '../../styles/utils/variables.scss';
+@import '../../styles/utils/mixins.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar-container {
+    height: 56px;
+    width: 100%;
+    font-family: $font-family-spectral, sans-serif;
+    font-weight: 400;
+    font-size: $fontSize14;
+    background-color: $pantone-blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__links {
+        display: none;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
+        a {
+            text-decoration: none;
+            color: white;
+            margin-right: 15px;
+            transition: color 0.3s ease-in-out;
+
+            &:hover {
+                color: lighten($pantone-blue, 20%);
+            }
+        }
+
+        @include bp-medium {
+            display: flex;
+            align-items: center;
+        }
+
+        @include bp-large {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__logo {
+        margin-left: 15px;
+
+        img {
+            width: 53.72px;
+            height: 35px;
+        }
+    }
+    &__menu {
+        margin-right: 15px;
+        display: block;
+
+        img {
+            width: 35.56px;
+            height: 16.25px;
+        }
+    }
+
+    @include bp-medium {
+        &__menu {
+            display: none;
+        }
+    }
+    @include bp-large {
+        &__menu {
+            display: none;
+        }
+    }
+
+    &.menu-open {
+        .navbar-container__menu {
+            display: none;
+        }
+        .navbar-container__links {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.9);
+            padding-top: 56px;
+            width: 40%;
+            z-index: 100;
+            transform: translateX(0);
+            opacity: 1;
+            overflow-y: auto;
+
+            a {
+                margin: 15px;
+                font-size: $fontSize16;
+            }
+        }
+    }
+}

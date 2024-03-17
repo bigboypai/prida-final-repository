@@ -1,0 +1,67 @@
+@import '../../styles/utils/variables.scss';
+@import '../../styles/utils/mixins.scss';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $font-family-spectral, sans-serif;
+}
+
+.hero-container {
+    height: 572px;
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    min-width: 290px;
+    justify-content: center;
+    position: relative;
+
+    background-image: url('/public/background.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+
+    @include bp-medium {
+        padding-left: 75px;
+    }
+    @include bp-large {
+        padding-left: 75px;
+    }
+
+    &__title {
+        font-size: $fontSize40;
+        margin-bottom: 15px;
+        max-width: 290px;
+    }
+
+    &__text {
+        max-width: 230px;
+        margin-bottom: 30px;
+
+        @include bp-medium {
+            font-size: $fontSize16;
+        }
+        @include bp-large {
+            font-size: $fontSize18;
+        }
+    }
+
+    &__cta {
+        &-button {
+            font-size: $fontSize12;
+            font-weight: 300;
+            background: $pantone-gold;
+            padding: 18px 50px;
+            border: none;
+            border-radius: 12px;
+            color: whitesmoke;
+            cursor: pointer;
+
+            @include bp-medium {
+                font-size: $fontSize16;
+            }
+        }
+    }
+}
