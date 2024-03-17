@@ -17,6 +17,8 @@
     justify-content: center;
 
     background-image: url('/thirdbg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 
     .icsb {
             font-size: $fontSize12;
