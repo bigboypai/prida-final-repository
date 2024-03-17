@@ -10,7 +10,7 @@
 }
 
 .info-container {
-    height: 100vh;
+    // height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,3 +44,37 @@
         }
     }
 }
+
+.info-container__section-product__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 50px;
+
+}
+.info-container__section-product__item {
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    text-align: center;
+    margin: 10px;
+    font-size: $fontSize14;
+    font-family: $font-family-spectral, sans-serif;
+
+
+    img {
+        height: 120px;
+        width: 100%;
+    }
+}
+
+// height: 200px; /* Increased height for better visual appearance */
+// width: 200px; /* Increased width for better visual appearance */
+// margin: 10px; /* Add some margin between items */
+// border-radius: 8px; /* Rounded corners for better visual appearance */
+// overflow: hidden;
+// text-align: center;
+// display: flex;
+// flex-direction: column;
+// justify-content: center;
+// align-items: center;
