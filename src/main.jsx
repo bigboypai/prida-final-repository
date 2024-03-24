@@ -10,7 +10,7 @@ import './main.scss'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <div className='main-container'>
+    <div className='main-container poppins-regular'>
     <Navbar />
     <div className='main-container__hero'>
       <Hero />

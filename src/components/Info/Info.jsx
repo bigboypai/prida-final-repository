@@ -12,7 +12,7 @@ const Info = () => {
             <h2 className='info-container__section-heading'> PRODUCTOS </h2>
             <div className='info-container__section-product__grid'>
               <div className='info-container__section-product__item'>
-                <img src="https://dfinnova.com/wp-content/themes/yootheme/cache/dc/lechugas-dc273b01.jpeg" alt="Lechugas" />
+                <img src="https://www.elmueble.com/medio/2022/05/30/th-g-en-pixabay-lechuga_622bee59_1200x630.jpg" alt="Lechugas" />
                 <p>Variedad en lechugas</p>
               </div>
               <div className='info-container__section-product__item'>
@@ -32,8 +32,8 @@ const Info = () => {
                 <p>Cebollino</p>
               </div>
               <div className='info-container__section-product__item'>
-                <img src="https://www.infocampo.com.ar/wp-content/uploads/2021/03/rabanito-infocampo.jpg" alt="rabanito" />
-                <p>Rabanito</p>
+                <img src="https://i0.wp.com/semillasplantae.com/wp-content/uploads/2022/04/mail35.jpeg?fit=750%2C750&ssl=1" alt="apio" />
+                <p>Apio</p>
               </div>
             </div>
         </div>

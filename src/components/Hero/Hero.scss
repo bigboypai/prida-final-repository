@@ -5,12 +5,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: $font-family-spectral, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .hero-container {
-    height: 100vh;
-    padding-left: 15px;
+    min-height: 100vh;
+    padding-left: 25px;
     display: flex;
     flex-direction: column;
     min-width: 290px;
@@ -21,6 +21,7 @@
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     color: whitesmoke;
 
     &__title {
