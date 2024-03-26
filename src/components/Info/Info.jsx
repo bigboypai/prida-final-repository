@@ -33,7 +33,7 @@ const Info = () => {
               </div>
               <div className='info-container__section-product__item'>
                 <img src="https://i0.wp.com/semillasplantae.com/wp-content/uploads/2022/04/mail35.jpeg?fit=750%2C750&ssl=1" alt="apio" />
-                <p>Apio</p>
+                <p>Culantro</p>
               </div>
             </div>
         </div>
