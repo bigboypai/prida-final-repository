@@ -24,7 +24,7 @@ const Info = () => {
                 <p>Apio</p>
               </div>
               <div className='info-container__section-product__item'>
-                <img src="https://ejerciciosencasa.es/wp-content/uploads/2014/01/3-IMG_3965.jpg" alt="remolacha" />
+                <img src="https://www.huercasa.com/wp-content/uploads/2024/11/Remolacha-Roja-huercasa.jpg" alt="remolacha" />
                 <p>Remolacha</p>
               </div>
               <div className='info-container__section-product__item'>
