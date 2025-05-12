@@ -8,7 +8,7 @@
 }
 
 .navbar-container {
-    height: 56px;
+    height: 72px;
     width: 100%;
     font-family: $font-family-spectral, sans-serif;
     font-weight: 400;
@@ -45,11 +45,11 @@
     }
 
     &__logo {
-        margin-left: 15px;
+        margin-left: 30px;
 
         img {
-            width: 53.72px;
-            height: 35px;
+            // width: 53.72px;
+            height: 50px;
         }
     }
     &__menu {

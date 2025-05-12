@@ -9,7 +9,8 @@
 }
 
 .info-container-bg {
-    height: 100vh;
+    min-height: 100vh;
+    padding: 4rem 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,41 +19,47 @@
     background-image: url('/thirdbg.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    text-align: center;
 
     .icsb {
-            font-size: $fontSize12;
-            font-weight: 300;
-            background: $pantone-gold;
-            padding: 18px 50px;
-            border: none;
-            border-radius: 12px;
-            color: whitesmoke;
-            cursor: pointer;
+        font-size: $fontSize14; // = 14px
+        font-weight: 500;
+        background: $pantone-gold;
+        padding: 18px 50px;
+        border: none;
+        border-radius: 12px;
+        color: whitesmoke;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: darken($pantone-gold, 10%);
+            transform: scale(1.05);
+        }
     }
 
     &__section {
-        max-width: 350px;
+        max-width: 600px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0 1rem;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 
         &-heading {
-            margin-bottom: 10px;
-            font-weight: 400;
-            font-size: $fontSize20;
+            font-size: $fontSize40; // = 40px
+            font-weight: 600;
+            margin-bottom: 24px;
             color: $pantone-gold;
-            @include bp-medium {
-                margin-bottom: 15px;
-            }
-            @include bp-large {
-                margin-bottom: 15px;
-            }
         }
 
         &-paragraph {
-            margin-bottom: 20px;
+            font-size: 16px; // = 14px
+            line-height: 1.6;
             text-align: justify;
-            font-size: $fontSize14;
+            margin-bottom: 20px;
         }
     }
 }
